@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>innerHTML and innerHTML Properties</title>
+<style type="text/css">
+	h1
+	{
+		font-size: 18pt; font-weight: bold;
+		font-family: "Comic Sans MS", Arial, sans-serif;
+	}
+	.small
+	{
+		font-size: 12pt; font-weight: 400; color:gray;
+	}
+
+</style>
+<script type="text/javascript" src="../jsb-global.js"></script>
+<script type="text/javascript" src="jsb-26-11.js"></script>
+</head>
+<body>
+	<h1>innerHTML and innerHTML Properties</h1>
+	<form>
+		<p>
+			<input type="text" 
+			       name="HTMLInput" 
+				   value="&lt;I&gt;First&lt;/I&gt; Article &lt;span class='small'&gt;(of ten_&lt;/span&gt;" 
+				   size="50" />
+
+			<input type="button" value="Change Heading HTML"
+				   onclick="setGroupLabelAsHTML(this.form)" />
+		</p>
+
+		<p>
+			<input type="text" 
+				   name="textInput"
+				   value="&lt;I&gt;First&lt;/I&gt; Article &lt;span class='small'&gt;(of ten_&lt;/span&gt;" 
+				   size="50" />
+
+			<input type="button" value="Change Heading Text"
+				   onclick="setGroupLabelAsText(this.form)" />
+		</p>
+		</form>
+		<h1 id="label1">ARTICLE I<h1>
+		<p>
+			Congress shall make no law respecting an establishment of religion, or prohibiting the free excercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the government for a redress of grievances.
+		</p>
+</body>
+</html>

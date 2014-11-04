@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>String Slicing and Dicing, Part I</title>
+    <script type="text/javascript" src="../jsb-global.js"></script>
+    <scipt type="text/javascript" src="jsb-15-05.js"></script>
+</head>
+<body>
+    <h1>String Slicing and Dicing, Part I</h1>
+    <b>String slice() Method</b>
+    <form action="string-slice.php">
+        <p>
+            <label for="source">Text used for the methids:</label>
+        </p>
+        <p>
+            <textarea id="source" name="source" cols="60" rows="1">
+                Electroencephalograph</textarea>
+            <pre>
+----|----|----|----|-
+    5    10   15   20
+            </pre>
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Parameters</th>
+                    <th>Results</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>string.slice()</td>
+                <td>(
+                    <select id="parameter1" name="parameter1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                    </select>
+                    <select id="parameter2" name="parameter2">
+                        <option>(None)</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="-1">-1</option>
+                        <option value="-5">-5</option>
+                        <option value="-10">-10</option>
+                    </select>
+                )</td>
+                <td>
+                    <input type="text" id="result" name="result" size="25" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

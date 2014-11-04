@@ -1,0 +1,12 @@
+th, td
+{
+	border: 5px groove black
+	text-align: center;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+th
+{
+	font-weight: bold;
+}

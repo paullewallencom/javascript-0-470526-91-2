@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Beatle Picker</title>
+    <sctipt type="text/javascript" src="../jsb-global.js"></scipt>
+    <sctipt type="text/javascript" src="jsb-11-06.js"></scipt>
+</head>
+<body>
+    <h1>Beatle Picker</h1>
+    <form id="beatles-form" action="beatles.php" method="get">
+        <p>
+            <label>Choose your favorite Beatles:</label>
+
+            <input type="radio" name="Beatles" id="radio1" value="John Lennon" checked>
+            <label for="radio1">John</label>
+
+            <input type="radio" name="Beatles" id="radio2" value="Paul McCartney">
+            <label for="radio2">Paul</label>
+            <input type="radio" name="Beatles" id="radio3" value="George Harrison">
+            <label for="radio3">George</label>
+            <input type="radio" name="Beatles" id="radio4" value="Ringo Starr">
+            <label for="radio4">Ringo</label>
+        </p>
+        <p>
+            <label for="song">Enter the name of your favorite Beatles song:<label>
+            <input type="text" id="song" name="song" value="Eleanor Rigby">
+            <input type="submit" id="submit" value="Process Request...">
+        </p>
+    </form>
+</body>
+</html>

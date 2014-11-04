@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Inserting an WinIE5+ Table Row</title>
+	<script type="text/javascript" src="../jsb-global.js"></script>
+	<script type="text/javascript" src="jsb-26-18.js"></script>
+</head>
+<body>
+<h1>Inserting an WinIE5+ Table Row</h1>
+<table id="myTable" border="1">
+<tr>
+<th>Row ID</th>
+<th>Data</th>
+</tr>
+<tr id="firstDataRow">
+<td>firstDataRow</td>
+<td>Fred</td>
+</tr>
+<tr id="secondDataRow">
+<td>secondDataRow</td>
+<td>Jane</td>
+</tr>
+</table>
+<hr />
+<form>
+Enter text to be added to the table:
+<br />
+
+<input type="text" name="input" size="25" />
+<br />
+<input type='button' value='Insert Row' onclick='addRow(this.form.input.value)' />
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>addBehavior() and removeBehavior() Methods</title>
+	<script type="text/javascript" src="../jsb-global.js"></script>
+	<script type="text/javascript" src="jsb-26-19.js"></script>
+</head>
+<body>
+<h1>addBehavior() and removeBehavior() Methods</h1>
+<hr />
+<p id="myP">
+	This is a sample paragraph. After turning on the behavior, it will turn your selected color when you mouse down anywhere in this paragraph.
+</p>
+<form>
+<input type="button" value="Switch On Behavior" onclick="turnOn()" />
+Choose a 'hot' color:
+<select name="colorChoice" onchange="setColor(this, this.value)">
+<option value="red">red</option>
+<option value="blue">blue</option>
+<option value="cyan">cyan</option>
+</select>
+<br />
+<input type="button" value="Switch Off Behavior" onclick="turnoff()" />
+<p>
+	<input type="button" value="Count the URNs" onclick="showBehaviorCount()" />
+</p>
+</form>
+</body>
+</html>

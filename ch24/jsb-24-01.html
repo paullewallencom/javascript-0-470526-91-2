@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Object Watching</title>
+    <script type="text/javascript" src="../jsb-global.js"></script>
+    <script type="text/javascript" src="jsb-23-04.js"></script>
+</head>
+<body>
+	<!-- Display the Planet choices to the visitor -->
+	<h1>Watching Over You</h1>
+	<form id="theForm" action="validate.php" method="get">
+		<div>
+		
+		<label for="theText">Enter text here:</label>
+		<input id="theText" type="text" name="entry" size="50" value="Default Value" />
+		<p><input id="fourScoreButton" type="button" value="Set to Phrase I" onclick="setIt('Four score and seven years ago...')"></p>
+		<p><input id="whenInButton" type="button" value="Set to Phrase II" onclick="setIt('When in the course of human events...')"></p>
+
+		<p><input id="resetButton" type="reset" onclick="setIt('Default value')"></p>
+
+		<p>
+			<input id="unWatchButton" type="button" value="Dont' Watch It" onclick="watchIt(false)">
+			<input id="unWatchButton" type="button" value="Dont' Watch It" onclick="watchIt(false)">
+		</p>
+		</div>
+	</form>
+</body>
+</html>

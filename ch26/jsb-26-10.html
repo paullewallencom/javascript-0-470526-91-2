@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>firstChild and lastChild Properties</title>
+<script type="text/javascript" src="../jsb-global.js"></script>
+<script type="text/javascript" src="jsb-26-10.js"></script>
+</head>
+<body>
+<h1>firstChild and lastChild Property Lab</h1>
+<hr />
+<form>
+<label>Enter some text to add to or replace in the OL element:</label>
+<br />
+
+<input type="text" name="input" size="50" />
+<br />
+
+<input type="button" value="Insert at Top" onclick="prepend(this.form)" />
+<input type="button" value="Append at Bottom" onclick="append(this.form)" />
+<br />
+
+<input type="button" value="Replace First Item" onclick="replaceFirst(this.form)" />
+<input type="button" value="Replace Last Item" onclick="replaceLast(this.form)" />
+</form>
+<ol id="myList">
+<li>Initial Item 1</li>
+<li>Initial Item 2</li>
+<li>Initial Item 3</li>
+<li>Initial Item 4</li>
+</ol>
+</body>
+</html>

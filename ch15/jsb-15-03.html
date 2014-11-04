@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Regular Expression Match Workshop</title>
+    <script type="text/javascript" src="../jsb-global.js"></script>
+    <script type="text/javascript" src="../jsb-15-03.js"></script>
+</head>
+<body>
+    <h1>Regular Expression Match Workshop</h1>
+    <form action="regexp-match.php">
+        <p>
+            <label for="string">Enter a main string:</label>
+            <input type="text" id="string" name="string" size="60"
+                value="Many a maN and womAN have meant to visit GerMAny." />
+        </p>
+        <p>
+            <label for="string">Enter a regular expression to match:</label>
+            <input type="text" id="pattern" name="pattern" size="25" value="\wa\w" />
+            <input type="checkbox" id="caseSens" name="caseSens" />
+            <label for="caseSens">Case-sensitive</label>
+        </p>
+        <p>
+            <input type="button" id="button" value="Execute match()" />
+            <input type="reset" />
+        </p>
+        <p>
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result" size="40" />
+        </p>
+        <p>
+            <label for="count">Count:</label>
+            <input type="text" id="count" name="count" size="3" />
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+#controller
+{
+    position: relative;
+}
+
+#coontroller li
+{
+    position: absolute;
+    list-style: none;
+    display: block;
+    height: 70px; width: 136px;
+}
+
+#controller a
+{
+    display: block;
+    text-indent: -999px;
+    height: 70px;
+}
+
+#first
+{
+    left: 0px;
+}
+
+#prev
+{
+    left: 146px;
+}
+
+#next
+{
+    left: 292px;
+}
+
+#last
+{
+    left: 438px;
+}
+
+#first a
+{
+    background-image: url('firstoff.png');
+}
+
+#first a:hover
+{
+    background-image: url('firston.png');
+}
+
+#prev a
+{
+    background-image: url('prevoff.png');
+}
+
+#prev a:hover
+{
+    background-image: url('prevon.png');
+}
+
+#next a
+{
+    background-image: url('nextoff.png');
+}
+
+#next a:hover
+{
+    background-image: url('nexton.png');
+}
+
+#last a
+{
+    background-image: url('lastoff.png');
+}
+
+#last a:hover
+{
+    background-image: url('laston.png');
+}

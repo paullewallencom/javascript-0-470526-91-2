@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Regular Expression Replace and Search</title>
+    <script type="text/javascript" src="../jsb-global.js"></script>
+    <script type="text/javascript" src="jsb-15-04.js"></script>
+</head>
+<body>
+    <h1>Regular Expression Replace and Search</h1>
+    <form action="regexp-replace.php">
+        <p>
+            <label for="source">Text used for string.replace() and string.search() methods:</label>
+        </p>
+        <p>
+            <textarea id="source" name="source" cols="60" rows="5">
+                To be, or not to be: that is the question:
+                Whether 'tis nobler in the mind to suffer
+                The slings and arrows of outrageous fortune,
+                Or to take arms against a sea of troubles,
+                And by opposing end them.
+            </textarea>
+            </p>
+            <p>
+                <label for="pattern">Enter a regular expression pattern to match:</label>
+                <input type="text" id="pattern" name="pattern" size="25" value="\B't" />
+                <input type="checkbox" id="caseSens" name="caseSens" />
+                <label for="caseSens">Case-sensitive</label>
+            </p>
+            <p>
+                <label for="replacement">Enter a string to replace the matching strings:</label>
+                <input type="text" id="replacement" name="replacement"
+                    size="30" value="it" />
+            </p>
+            <p>
+                <input type="button" id="button-replace" value="Execute replace()"
+                    onclick="doReplace(this.form)" />
+                <input type="reset" />
+                <input type="button" id="button-search" value="Execute search()"
+                    onclick="doSearch(this.form)" />
+            </p>
+            <p>
+                <label for="result">Result:</label><br />
+                <textarea id="result" name="result" cols="60" rows="5"></textarea>
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>applyElement() Method</title>
+<style type="text/css">
+#mySpan
+{
+    font-size:x-large;
+}
+</style>
+<script type="text/javascript" src="../jsb-global.js"></script>
+<script type="text/javascript" src="jsb-26-22.js"></script>
+</head>
+<body>
+<h1>applyElement() Method</h1>
+<hr />
+<p id='myP'>A simple paragraph with a <span id='mySpan'><code>
+special</code></span> word in it. How special? Click an apply button, then click the show button.</p>
+<form>
+<input type='button' value='Apply &lt;EM&gt; Outside' onclick='applyOutside()' />
+<input type='button' value='Apply &lt;EM&gt; Outside' onclick='applyInside()' />
+<input type='button' value='Show &lt;P&gt; HTML...' onclick='showHTML()' />
+<br />
+<input type='button' value='Restore Paragraph' onclick='location.reload()' />
+</form>
+</body>
+</html>

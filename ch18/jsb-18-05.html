@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Array Prototypes</title>
+    <script type="text/javascript" src="../jsb-global.js"></script>
+    <script type="text/javascript" src="jsb-18-05.js"></script>
+</head>
+<body>
+    <h1>Array Prototypes</h1>
+    <form>
+        <fieldset id="arrays">
+            <legend>Arrays</legend>
+            
+            <p>
+                <label>arrayOne</label>
+                <textarea name="array1" cols="25" rows="6"></textarea>
+            </p>
+
+            <p>
+                <label>arrayTwo</label>
+                <textarea name="array2" cols="25" rows="6"></textarea>
+            </p>
+
+            <p>
+                <label>arrayThree</label>
+                <textarea name="array3" cols="25" rows="6"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Array Value Controls</legend>
+            <p>
+                <label class="input" for="source1">Enter new value for arrayThree[0]:</label>
+                <input type="text" name="source1" value="Jerry">
+                <input id="button1" type="button" value="Change arrayThree[0]">
+            </p>
+
+            <p>
+                <label>Current arrayOne[0] is:</label>
+                <input id="result1" type="text" disabled="disabled">
+            </p>
+
+            <p>
+                <label>Current arrayThree[0] is:</label>
+                <input id="result2" type="text" disabled="disabled">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Object Value Controls</legend>
+            <p>
+                <label>textObj assigned to arrayTwo[2]:</label>
+                <input type="text" name="original" disabled="disabled">
+            </p>
+            <p>
+                <label class="input">Enter new value for arrayThree[5]:</label>
+                <input type="text" name="source2" value="Phoebe">
+                <input id="button2" type="button" value="Change arrayThree[5].value">
+            </p>
+            <p>
+                <label>Current arrayTwo[2].value is:</label>
+                <input type="text" name="result3" disabled="disabled">
+            </p>
+            <p>
+                <label>Current arrayThree[5].value is:</label>
+                <input type="text" name="result4" disabled="disabled">
+            </p>
+        </fieldset>
+        <p class="reset">
+            <input id="buttonReset" type="button" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

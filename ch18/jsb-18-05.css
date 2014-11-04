@@ -1,0 +1,28 @@
+fieldset
+{
+    clear: left;
+    float: left;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+fieldset#arrays p
+{
+    float: left;
+    margin: 0 0.5em;
+}
+
+fieldset#arrays label
+{
+    display: block;
+    text-align: center;
+}
+
+label.input
+{
+    font-weight: bold;
+}
+
+p.counter-reset: {
+    clear: left;
+}

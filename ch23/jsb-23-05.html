@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>OO Planetary Data Presentation</title>
+    <script type="text/javascript" src="../jsb-global.js"></script>
+    <script type="text/javascript" src="jsb-23-04.js"></script>
+</head>
+<body>
+<!-- Display the Planet choices to the visitor -->
+<h1>The Daily Planet</h1>
+	<form>
+	Select a planet to view its planetary data:
+		<select name="planetList" onchange="doDisplay(this)">
+			<option>Mercury</option>
+			<option>Venus</option>
+			<option selected="selected">Earth</option>
+			<option>Mars</option>
+			<option>Jupiter</option>
+			<option>Saturn</option>
+			<option>Uranus</option>
+			<option>Neptune</option>
+			<option>Pluto</option>
+		</select>
+	</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<tile>Data Binding (recordNumber)</tile>
+	<style type="text/css">
+		#instructions
+		{
+			font-weight: bold;
+		}
+		.filmTitle
+		{
+			font-style: italic;
+		}
+		#columnHeaders
+		{
+			background-color: yellow; text-align: center;
+		}
+	</style>
+	<!--<script type="text/javascript" src="../jsb-global.js"></script>-->
+	<script type="text/javascript" src="jsb-26-15.js"></script>
+</head>
+<body>
+<h1>Data Binding (recordNumber)</h1>
+<p>
+<span id="instructions">Academy Awards 1978-1997</span> (Click on a table row extract data from one record into the following paragraph.)
+</p>
+<p>
+The award for Best Actor of <span datasrc="#oscars" datafld="Year"></span>&nbsp;went to <span datasrc="#oscars" datafld="Year"></span>&nbsp;went to <span datasrc="#oscars" datafld="Best Actor"></span>
+&nbsp;for his outstanding achievement in the film
+<span class="filmTitle" datasrc="#oscars" datafld="Best Actor Film">
+</span>.
+</p>
+<table border="1" datasrc="#oscars" align="center">
+	<thead id="columnHeaders">
+	<tr>
+	<td>Year</td>
+	<td>Film</td>
+	<td>Director</td>
+	<td>Actress</td>
+	<td>Actor</td>
+	</tr>
+	</thead>
+	<tr id="repeatableRow" onclick="setRecNum(this)">
+	<td><div id="col1" datafld="Year"></div></td>
+	<td><div class="filmTitle" id="col2" datafld="Best Picture"></div></td>
+	<td><div id="col3" datafld="Best Director"></div></td>
+	<td><div id="col4" datafld="Best Actress"></div></td>
+	<td><div id="col5" datafld="Best Actor"></div></td>
+    </tr>
+</table>
+<object id="oscars" classid="clsid:33C7BC4-460F-11D0-BC04-0080C7055A83">
+<param name="DataURL" value="Academy Awards.txt" />
+<param name="UseHeader" value="True" />
+<param name="FieldDelim" value="&#09;" />
+</object>
+</body>
+</html>
+
+// set recordset pointer to the record clicked on in the table.
+function setRecNum(row)
+{
+document.oscars.recordset.AbsolutePosition = row.recordNumber;
+}

@@ -1,0 +1,6 @@
+/* limit the width of the page */
+html
+{
+    width: 60em;
+    max-width: 100%;
+}

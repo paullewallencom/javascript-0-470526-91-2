@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<tile>offsetParent Property</tile>
+	<style type="text/css">
+		#myImg
+		{
+			position: absolute;
+			height: 12px;
+			width: 12px;
+		}	
+	</style>
+	<script type="text/javascript" src="../jsb-global.js"></script>
+	<script type="text/javascript" src="jsb-26-12.js"></script>
+</head>
+<body>
+<h1>offsetParent Property</h1>
+<hr />
+
+<p>
+After the document loads, the script positions a small image in the upper left corner of the second table cell.
+</p>
+<table border="1" align="center">
+<tr>
+<td>This is the first cell</td>
+<td id="myCell">This is the second cell.</td>
+</tr>	
+</table>
+<img id="myImg" alt="image" src="end.gif" height="12" width="12" style="visibility: hidden;" />
+</body>
+</html>

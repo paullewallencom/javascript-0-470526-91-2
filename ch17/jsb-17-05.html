@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Date Entry Validation</title>
+    <script type="text/javascript" src="../jsb-global.js"></script>
+    <script type="text/javascript" src="jsb-17-05.js"></script>
+</head>
+<body>
+    <h1>Date Entry Validation</h1>
+    <form id="birthdate" action="example.php" method="post">
+        <p>Please enter your birthdate...</p>
+        <p>
+            <label for="month">Month:</label>
+            <input type="text" id="month" name="month" value="1" size="2" maxlength="2">
+            
+            <label for="day">Day:</label>
+            <input type="text" id="day" name="day" value="1" size="2" maxlength="4">
+            
+            <label for="year">Year:</label>
+            <input type="text" id="day" name="year" value="1900" size="2" maxlength="4">
+        </p>
+        <p>
+            Thank you for entering <span id="fullDate">your birthdate</span>.
+        </p>
+        <p>
+            <input type="submit">
+            <input type="Reset">
+        </p>
+    </form>
+</body>
+</html>

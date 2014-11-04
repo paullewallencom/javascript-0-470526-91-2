@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Data Binding</title>
+<style type="text/css">
+#display
+{
+	width : 500px; border : 10px ridge blue; padding : 20px;
+}
+.hiddenControl
+{
+	display : none; 
+}
+</style>
+<script type="text/javascript" src="../jsb-global.js"></script>
+<script type="text/javascript" src="jsb-26-08.js"></script>
+</head>
+<body>
+<h1>U.S. Bill of Rights</h1>
+<form>
+<input type="button" value="Toggle Complete/Individual" onclick="toggleComplete()" />
+<span id="buttonWrapper" class="">
+<input type="button" value="Prev" onclick="prevField()" />
+<input type="button" value="Next" onclick="nextField()" />
+</span>
+</form>
+
+<div id="diplay" datasrc="#rights_html" datafld="Article1" dataformatas="HTML"></div>
+
+<object id="rights_html"
+classid="clsid:333C7BC4-469F-11D0-BC04-0080C7055A83">
+<param name="DataURL" value="Bill of Rights.txt">
+<param name="UseHeader" value="True">
+<param name="FieldDelim" value="&#09;">
+</object>
+<object id="rights_raw"
+classid="clsid:333C7BC4-469F-11D0-BC04-0080C7055A83">
+<param name="DataURL" value="Bill of Rights (no format).txt" />
+<param name="FieldDelim" value="\" />
+<param name="RowDelim" value="\" />
+</object>
+</body>
+</html>

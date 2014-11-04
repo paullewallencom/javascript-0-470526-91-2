@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>Data Binding - Sorting</title>
+<style type="text/css">
+thead
+{
+	background-color: yellow; text-align:center;
+}
+</style>
+<script type="text/javascript" src="../jsb-global.js"></script>
+<script type="text/javascript" src="jsb-26-09.js"></script>
+</head>
+<body>
+<h1>Academy Awards 1978-2005</h1>
+<form>
+<p>
+Sort list by year
+<a href="javascript:sortByYear('normal')">from newest to oldest</a> or 
+<a href="javascript:sortByYear('reverse')">from oldest to newset</a>.
+</p>
+<p>
+Filter listings for records whose
+<select name="filter1" onchange="filterInCommon(this.form)">
+<option value="Best Director Film">Best Director's Film</option>
+<option value="Best Actress Film">Best Actress' Film</option>
+<option value="Best Actor Film">Best Actor's Film</option>
+</select>
+<input type="radio" name="operator" checked="checked" onclick="filterInCommon(this.form)" />is
+<input type="radio" name="operator" onclick="filterInCommon(this.form)">is not
+<select name="filter2" onchange="filterInCommon(this.form)">
+<opton value="Best Picture">Best Picture</opton>
+<option value="Best Director Film">Best Director's Film</option>
+<option value="Best Actress Film">Best Actress' Film</option>
+<option value="Best Actor Film">Best Actor Film</option>
+</select>
+</p>
+</form>
+<table datasrc="#oscars" border="1" align="center">
+<thead>
+<tr>
+<td>Year</td>
+<td>Film</td>
+<td>Director</td>
+<td>Actress</td>
+<td>Actor</td>
+</tr>
+</thead>
+<tr>
+<td><div id="col1" datafld="Year"></div></td>
+<td><div id="col2" datafld="Best Picture"></div></td>
+<td><div id="col3" datafld="Best Director"></div></td>
+<td><div id="col4" datafld="Best Actress"></div></td>
+<td><div id="col5" datafld="Best Actor"></div></td>
+</tr>
+</table>
+<object id="oscars" classid="clsid:333C7BC4-469F-11D0-BC04-0080C7055A83">
+<param name="DataURL" value="Academy Awards.txt" />
+<param name="UseHeader" value="True" />
+<param name="FieldDelim" value="&#09;" />
+</object>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>accessKey Property</title>
+		<script type="text/javascript" src="../jsb-global.js"></script>
+		<script type="text/javascript" src="jsb-26-01.js"></script>
+	</head>
+
+	<body>
+		<h1>accessKey Property Lab</h1>
+		<hr />
+		
+		Setting:<br />
+		<form name="input">
+			
+			Assign an accessKey value to the Button below and press Return:
+			<input type="text" size="2" maxLength="1" onkeypress="assignKey('button', this)" />
+			<br />
+			
+			Assign an accessKey value to the Text Box below and press Return:
+			<input type="text" size="2" maxLength="1" onkeypress="return assignKey('text', this)" />
+			<br />
+
+			Assign an accessKey value to the Table below (IE5.5+ only)
+			and press Return:
+			<input type="text" size="2" maxlength="1" onkeypress="return assignKey('table', this)" />
+
+		</form>
+
+			<br />
+			Then press Alt (Windows) or Control (Mac) or ShiftEsc (Opera) + the key
+			
+			<br />
+			<em>Size the browser window to view nothing lower than this line.</em>
+			<hr />
+
+		<form name="output" onsubmit="return false">
+			<input type="button" id="access1" value="Standard Button" />
+			<input type="text" id="access2" />
+		</form>
+
+		<table id="myTable" cellpadding="10" border="2">
+		<tr>
+		<th>Quantity</th>
+		<th>Description</th>
+		<th>Price</th>
+		</tr>
+
+		<tbody bgcolor="red">
+		<tr>
+		<td width="100">4</td>
+		<td>Primary Widget</td>
+		<td>$14.95</td>
+		</tr>
+		<tr>
+		<td>10</td>
+		<td>Secondary Widget</td>
+		<td>$114.97</td>
+		</tr>
+		</tbody>
+		</table>
+
+	</body>
+</html>

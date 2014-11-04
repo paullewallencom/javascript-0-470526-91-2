@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8">
+      <title>W3C Event Model Lab</title>
+      <style type="text/css">
+         td
+         {
+            text-align:center
+         }
+      </style>
+      <script type="text/javascript" src="../jsb-global.js"></script>
+      <script type="text/javascript" src="jsb26-20.js"></script>
+   </head>
+   <body id="myBODY">
+      <h1>W3C Event Model Lab</h1>
+      <hr />
+      <p id="myP"><span id="mySPAN">This paragraph (a SPAN element nested inside
+         a P element) can be set to listen for "click" events.</span>
+      </p>
+      <hr />
+      <form name="controls" id="controls">
+         <p>Examine click event characteristics:&nbsp;
+           <input type="button" value="Clear" onclick="clearTextArea()" />
+           <br />
+           <textarea name="output" cols="80" rows="6" wrap="virtual"></textarea>
+         </p>
+         <table cellpadding="5" border="1">
+            <caption style="font-weight:bold">Control Panel</caption>
+            <tr style="background-color:#ffff99">
+               <td rowspan="2">"Bubble"-type click listener:</td>
+               <td>
+                  <input type="button" value="Add to BODY"
+                         onclick="addBubbleListener('myBODY')" />
+               </td>
+               <td>
+                  <input type="button" value="Remove from BODY"
+                         onclick="removeBubbleListener('myBODY')" />
+               </td>
+            </tr>
+            <tr style="background-color:#ffff99">
+               <td>
+                  <input type="button" value="Add to P"
+                         onclick="addBubbleListener('myP')" />
+               </td>
+               <td>
+                  <input type="button" value="Remove from P"
+                         onclick="removeBubbleListener('myP')" />
+               </td>
+            </tr>
+            <tr style="background-color:#ff9999">
+               <td rowspan="2">"Capture"-type click listener:</td>
+               <td>
+                  <input type="button" value="Add to BODY"
+                         onclick="addCaptureListener('myBODY')" />
+               </td>
+               <td>
+                  <input type="button" value="Remove from BODY"
+                         onclick="removeCaptureListener('myBODY')" />
+               </td>
+            </tr>
+            <tr style="background-color:#ff9999">
+               <td>
+                  <input type="button" value="Add to P"
+                         onclick="addCaptureListener('myP')" />
+               </td>
+               <td>
+                  <input type="button" value="Remove from P"
+                         onclick="removeCaptureListener('myP')" />
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>
